@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Maleta.png" type="image/x-icon">
+    <title>Base De Dados | Rodrigo Pinheiro</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/index.html" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span>Rodrigo</span>Dev</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/index.html"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Shop.html"><i class='bx bx-cart'></i>Shop</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Análise.html"><i class='bx bx-line-chart'></i>Análise</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Tickets.html"><i class='bx bx-barcode'></i>Tickets</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Usúarios.html"><i class='bx bx-briefcase-alt-2'></i>Usúarios</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Configurações.html"><i class='bx bx-cog'></i>Configurações</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Notifica%C3%A7%C3%B5es.html"><i class='bx bx-bell'></i>Notificações</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Mapa.html"><i class='bx bx-map-alt'></i>Mapa</a></li>
+            <li class="active"><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Base%20de%20dados.html"><i class='bx bx-coin-stack'></i>Base de dados</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Sair.html" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Sair
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Pesquise...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <!--Notificações-->
+            <a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Notifica%C3%A7%C3%B5es.html" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <!--Final Notificações-->
+            <a href="" class="profile">
+                <img src="images/User Photo.jpg">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Análise
+                            </a></li>
+                        /
+                        <li><a href="#" class="active">Shop</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="report">
+                    <i class='bx bx-cloud-download'></i>
+                    <span>Download CSV</span>
+                </a>
+            </div>
+
+            <!-- Insights -->
+            <ul class="insights">
+                <li>
+                    <i class='bx bx-calendar-check'></i>
+                    <span class="info">
+                        <h3>
+                            1,074
+                        </h3>
+                        <p>Paid Order</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-show-alt'></i>
+                    <span class="info">
+                        <h3>
+                            3,944
+                        </h3>
+                        <p>Visita ao local</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-line-chart'></i>
+                    <span class="info">
+                        <h3>
+                            14,721
+                        </h3>
+                        <p>Pesquisas</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-dollar-circle'></i>
+                    <span class="info">
+                        <h3>
+                            $6,742
+                        </h3>
+                        <p>Total de vendas</p>
+                    </span>
+                </li>
+            </ul>
+            <!-- End of Insights -->
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Recente Orders</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Usúario</th>
+                                <th>Dia de inicio</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="images/User Photo.jpg">
+                                    <p>Rodrigo Pinheiro</p>
+                                </td>
+                                <td>26-08-2023</td>
+                                <td><span class="status completed">Completo</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/User Photo.jpg">
+                                    <p>Rodrigo Pinheiro</p>
+                                </td>
+                                <td>26-08-2023</td>
+                                <td><span class="status pending">Operando</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/User Photo.jpg">
+                                    <p>Rodrigo Pinheiro</p>
+                                </td>
+                                <td>26-08-2023</td>
+                                <td><span class="status process">Livre</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Reminders -->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Lembretes</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Comece nossa reunião</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Analise Nosso Site</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Entregar as encomendas</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- End of Reminders-->
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 900px;
+    height: 900px;
+    background-image: url(assets/img/Quadro.png);
+}
+
+form{
+    height: 400px;
+    width: 300px;
+    margin: 300px auto;
+    text-align: center;
+    border: 4px; color: black;
+    background-color: rgb(149, 133, 255);
+    border-radius: 6px;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+}
+#container {
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: var(--color-gradient);
+ background-image: url(laptop\ backgrounds.jpeg);
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+    </style>
+
+    <main id="container"></main>
+
+        <form>
+            <h3>Login</h3>
+            <input type="text" placeholder="Login" id="login">
+            <input type="password" placeholder="Senha" id="senha">
+            <input type="submit" onclick="logar(); return false">
+        </form>
+    </main>
+    <script>
+        
+        function logar(){
+
+var login = document.getElementById('login').value;
+var senha = document.getElementById('senha').value;
+
+if(login == "Rodrigo Pinheiro" && senha == "RoThazim"){
+    alert('Sucesso');
+    location.href = "file:///c%3A/Users/gelie/Desktop/Interland/conta.HTML";
+}else{
+    alert('Usuario ou senha incorretos');
+}
+
+}
+
+    </script>
+</body>
+</html>

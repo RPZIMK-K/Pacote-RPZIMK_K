@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/LGNNOVO.CSS">
+    <link rel="shortcut icon" href="img/Icone.jpg" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+            background-image: url(laptop\ backgrounds.jpeg);
+        }
+
+        form{
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+            border: 3px; color: black;
+            background-color: rgb(149, 133, 255);
+            border-radius: 5px;
+        }
+
+        input{
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+        #container {
+         height: 100vh;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: var(--color-gradient);
+         background-image: url(laptop\ backgrounds.jpeg);
+        }
+        /* Social Media */
+        #social_media {
+        display: flex;
+        justify-content: space-around;
+        }
+
+        #social_media img {
+        width: 35px;
+        }
+
+        #social_media img:hover {
+        transform: scale(1.2);
+        }
+        h3{
+            font-size: 40px;
+            text-align: center;
+            color: white;
+        }
+
+
+    </style>
+
+</head>
+<body>
+      <main id="container">
+    <form>
+        <h3>Login</h3>
+
+                        <!-- SOCIAL MEDIA LINKS -->
+                        <div id="social_media">
+                            <!-- FACEBOOK -->
+                            <a href="#">
+                                <img src="asets/img/facebook.png">
+                            </a>
+            
+                            <!-- GOOGLE -->
+                            <a href="#">
+                                <img src="asets/img/google.png">
+                            </a>
+                            
+                            <!-- GITHUB -->
+                            <a href="https://github.com/RPzim">
+                                <img src="asets/img/github.png">
+                            </a>
+                        </div>        
+                        
+        
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+
+    </form>
+     </main>
+    <script>
+
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "Rodrigo Pinheiro" && senha == "RoThazim"){
+                alert('Sucesso');
+                location.href = "file:///c%3A/Users/gelie/Desktop/Interland/conta.HTML";
+            }else{
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+
+    </script>
+
+
+</body>
+</html>

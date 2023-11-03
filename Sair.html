@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="images/Maleta.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Dash | Rodrigo Pinheiro</title>
+</head>
+<style>
+:root {
+    --light: #f6f6f9;
+    --primary: #1976D2;
+    --light-primary: #CFE8FF;
+    --grey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #363949;
+    --danger: #D32F2F;
+	--light-danger: #FECDD3;
+    --warning: #FBC02D;
+    --light-warning: #FFF2C6;
+    --success: #388E3C;
+    --light-success: #BBF7D0;
+}
+
+    .content main .header .reportn{
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 36px;
+    background: var(--danger);
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    font-weight: 500;
+}
+.content main .header .reports{
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 36px;
+    background: var(--success);
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    font-weight: 500;
+}
+</style>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/index.html" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span>Rodrigo</span>Dev</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/index.html"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Shop.html"><i class='bx bx-cart'></i>Shop</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Análise.html"><i class='bx bx-line-chart'></i>Análise</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Tickets.html"><i class='bx bx-barcode'></i>Tickets</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Usúarios.html"><i class='bx bx-group'></i>Usúarios</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Configurações.html"><i class='bx bx-cog'></i>Configurações</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Notifica%C3%A7%C3%B5es.html"><i class='bx bx-bell'></i>Notificações</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Mapa.html"><i class='bx bx-map-alt'></i>Mapa</a></li>
+            <li><a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Base%20de%20dados.html"><i class='bx bx-coin-stack'></i>Base de dados</a></li>
+        
+        </ul>
+        <ul class="side-menu">
+            <li class="active">
+                <a href="file:///c%3A/Users/gelie/Desktop/Rodrigo/Admin%20Dashboard%20%2302/Sair.html" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Sair
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+<style>
+    .content nav .notif .count_sair{
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    background: var();
+    border-radius: 50%;
+    color: var(--light);
+    border: 0px solid var(--light);
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count_sair"><!--Aqui é a qtde de Notificações--></span>
+            </a>
+            <a href="#" class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Sair?</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Você Deseja
+                            </a></li>
+                        ....
+                        <li><a href="#" class="active">Sair?</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="reports">
+                    <i class='bx bx-check-circle'></i>
+                    <span>Sim</span>
+                    <a href="#" class="reportn">
+                        <i class='bx bx-x-circle'></i>
+                        <span>Não</span>
+                </a>
+            </div>
+
+            <!-- Insights -->
+            <!-- End of Insights -->
+                <!-- Reminders -->
+                <!-- End of Reminders-->
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
